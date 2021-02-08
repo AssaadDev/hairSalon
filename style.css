@@ -1,0 +1,524 @@
+body {
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/*  navigation */
+
+.topnav {
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*navigation a  */
+
+.topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 110px;
+    margin-top: 50px;
+}
+
+.topnav a:hover {
+    color: rgb(255, 215, 106)
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+a::before {
+    background: #ffd300
+}
+
+
+/* Body main page */
+
+
+/*  slajd show container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: 10px 10px 165px #888888;
+}
+
+
+/* displeja samo jednu */
+
+.mySlides {
+    display: none;
+}
+
+
+/* narijed  & nazad */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* desno dugme*/
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*  text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* dugmici gore dole ovo ono */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* nestajanje slike fazon */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.logo {
+    width: 180px;
+    height: 120px;
+    float: left;
+    padding: 45px;
+}
+
+
+/* START FROM DOWN */
+
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.rasporedMap {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.nasolvKontatk {
+    /* naslov */
+    color: azure;
+    text-align: center;
+    padding: 5%;
+    font-size: 6vh;
+}
+
+
+/* left informacije */
+
+i {
+    /* samo icon edit */
+    color: rgb(83, 160, 79);
+    padding-right: 20px;
+    font-size: 26px;
+}
+
+.kontaktInfo {
+    /* text edit */
+    color: rgb(255, 255, 255);
+    max-width: 600px;
+    line-height: 70px;
+    padding-left: 50px;
+    font-size: 140%;
+    white-space: initial;
+    margin-bottom: 60px;
+    background-color: rgba(165, 114, 4, 0.392);
+    border-radius: 30px;
+}
+
+
+/* left informacije end */
+
+
+/*raspored left*/
+
+
+/*
+.rasporedLeft {}
+*/
+
+
+/* raspored left ende */
+
+
+/* google map */
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 700px;
+    padding-bottom: 100px;
+}
+
+.gmap_canvas {
+    border: solid 10px rgba(255, 204, 74, 0.809);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(243, 243, 138);
+    overflow: hidden;
+    background: none!important;
+    height: 500px;
+    width: 700px;
+}
+
+
+/* google map end */
+
+
+/* form */
+
+.kontaktiranje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maijl {
+    resize: vertical;
+    height: 35px;
+    width: 80%;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 15px;
+    border: solid 3px red;
+    box-shadow: 1px 1px rgb(248, 124, 124);
+}
+
+.subi {
+    border-radius: 20px;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(214, 169, 21);
+    box-shadow: 0.5px 0.5px whitesmoke;
+    margin: 15px;
+    width: 40%;
+    text-align: center;
+}
+
+.tekst {
+    border: solid 3px red;
+    font-size: 14px;
+}
+
+textarea:focus,
+input:focus,
+.subi:focus {
+    outline: none;
+}
+
+.tekst:focus-within,
+.maijl:focus-within {
+    border: solid 3px rgb(0, 255, 21);
+}
+
+::placeholder {
+    padding: 10px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::placeholder:focus-within {
+    color: rgb(0, 255, 21);
+}
+
+.subi:hover {
+    font-weight: bold;
+    color: rgb(4, 141, 15);
+    background-color: whitesmoke;
+    transform: scale(1.2);
+}
+
+.subi: {}
+
+
+/* form end */
+
+
+/*///////////////////////// Prcing PART ///////////////////////////////*/
+
+.PriceSpace {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.PriceTitle {
+    padding-bottom: 60px;
+    color: aliceblue;
+    font-size: 4vh;
+}
+
+.PriceBtn>a {
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    padding: 15px 30px 15px;
+    border: 2px solid whitesmoke;
+    box-shadow: 0.5px 0.5px gray;
+    color: rgb(214, 169, 21);
+    text-decoration: none;
+}
+
+#borderFix {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.priceListMan,
+.priceListWo {
+    margin: 50px 150px 50px;
+    background-color: rgb(255, 255, 255, 0.4);
+    color: rgb(214, 169, 21);
+    text-align: left;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+    border: solid 3px whitesmoke;
+    display: none;
+}
+
+.priceListMan {
+    display: grid;
+}
+
+
+/* prijava */
+
+.singup {
+    padding: 100px;
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 10%;
+    z-index: 1;
+}
+
+.pozadinaReg,
+.pozadina {
+    background-color: #d4af37;
+    margin: 0 35%;
+    max-width: 500px;
+    min-width: 500px;
+    border-radius: 20px;
+    filter: blur();
+}
+
+.singupTitle {
+    text-align: center;
+    background-color: #b88608;
+    color: rgb(255, 255, 255);
+    font-size: 130%;
+    padding: 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.singupContentReg,
+.singupContent,
+.singupContent>label {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: seashell;
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.singupContentReg>label>input,
+.singupContent>label>input {
+    margin: 0 20%;
+    margin-top: 15px;
+}
+
+.register,
+.register>a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #b88608;
+    padding: 10px 15px;
+    font-size: 110%;
+}
+
+.register {
+    margin: 0 10%;
+}
+
+.register:hover {
+    background-color: #d4af37;
+}
+
+.register>a:hover {
+    background-color: black;
+    color: blanchedalmond;
+    box-shadow: 2px 2px 10px 10px whitesmoke;
+    transform: scale(1.5);
+}
+
+.RegBtn,
+.singUPbtn {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.RegBtn>button,
+.singUPbtn>button {
+    padding: 10px 15px;
+    margin: 5px 25px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: #d7be69;
+    color: whitesmoke;
+    font-size: 115%;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+}
+
+.RegBtn>button:hover,
+.singUPbtn>button:hover {
+    background-color: #b88608;
+}
+
+#iks {
+    padding: 10px 35px;
+}
+
+
+/* prijava end  */
+
+
+/* REGISTRACIJA */
+
+.regi {
+    padding: 100px;
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 10%;
+    z-index: 1;
+    background-color: rgba(97, 96, 96, 0.4);
+}
+
+.singupContentReg>label {
+    padding: 20px;
+}
+
+.singupContentReg>label>input {
+    background-color: #d4af37;
+    color: whitesmoke;
+    display: flex;
+    margin-left: 32%;
+}
+
+.singupContentReg>label>input:focus-within,
+.singupContentReg>label>input:hover {
+    background-color: #d7be69;
+}
+
+
+/* REGISTRACIJA ende*/

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Frizerski Salon Anel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+
+<body>
+
+
+
+    <div id="xyz">
+
+
+
+        <header>
+            <!---Navigation bar by anel ubica -->
+
+
+            <div class="topnav" id="myTopnav">
+                <img class="logo" src="anelfiz.png">
+                <a href="#Pocetna">Pocetna</a>
+                <a href="#Cijjena">Cijene</a>
+                <a href="#Kontaa">Kontakt</a>
+                <a href="#reza">Rezervacija</a>
+                <a href="#prijava" id="prijavi" onclick="singshow()">Prijavi se</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+
+
+            <!-- container  mjenjanje slika-->
+            <div class="slideshow-container ">
+
+
+                <div class="mySlides fade ">
+                    <div class="numbertext ">1 / 3</div>
+                    <img src="salon123.jpg " style="width:100% ">
+                    <div class="text ">Neki TEKST 1</div>
+                </div>
+
+                <div class="mySlides fade ">
+                    <div class="numbertext ">2 / 3</div>
+                    <img src="salon123.jpg " style="width:100% ">
+                    <div class="text ">Neki Tekst 2</div>
+                </div>
+
+                <div class="mySlides fade ">
+                    <div class="numbertext ">3 / 3</div>
+                    <img src="salon123.jpg " style="width:100% ">
+                    <div class="text ">Neki Tekst</div>
+                </div>
+
+                <!-- Naprijed i nazad -->
+                <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+                <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- DUgmici za slike -->
+            <div style="text-align:center ">
+                <span class="dot " onclick="currentSlide(1) "></span>
+                <span class="dot " onclick="currentSlide(2) "></span>
+                <span class="dot " onclick="currentSlide(3) "></span>
+            </div>
+
+
+
+            <!-- Cjene -->
+
+            <div class="PriceSpace " id="cjn ">
+                <h1 class="PriceTitle "> Cjene </h1>
+                <div class="PriceBtn ">
+                    <a href="#cjn " id="borderFix " onclick="changeToMan() ">Man</a>
+                    <a href="#cjn " onclick="changeToWoman() ">Woman</a>
+                </div>
+                <div class="priceListMan " id="manList" onclick="changeToMan()">
+                    <div class="price1 ">
+                        <p>Boy</p>
+                        <p>Boy</p>
+                        <p>Boy</p>
+                    </div>
+                    <div class="price2 ">
+                        <p>Boy</p>
+                        <p>Boy</p>
+                        <p>Boy</p>
+                    </div>
+                </div>
+                <div class="priceListWo " id="womanList" onclick="changeToWoman()">
+                    <div class="price1 ">
+                        <p>Girl</p>
+                        <p>Girl</p>
+                        <p>Girl</p>
+                    </div>
+                    <div class="price2 ">
+                        <p>Girl</p>
+                        <p>Girl</p>
+                        <p>Girl</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Cjene -->
+
+            <!-- Kontakt -->
+
+            <div class="kontaktMjesto">
+                <h1 class="nasolvKontatk "> Kontakt </h1>
+                <div class="rasporedMap ">
+                    <div class="rasporedLeft ">
+                        <div class="kontaktInfo ">
+                            <div><i class="fas fa-map-marker-alt "></i> Addresa</div>
+                            <div><i class="fas fa-phone "></i>+3876xxxxxxxx</div>
+                            <div><i class="fas fa-clock "></i>08:00 - 17:00</div>
+                            <div><i class="fas fa-envelope "></i>anel@frizerski.salon</div>
+                        </div>
+                        <form class="kontaktiranje " action="conPHP.php" method="POST ">
+                            <input type="email " name="mail " id="mail" class="maijl" placeholder="E-mail ">
+                            <textarea name="text " id="txt " class="tekst" rows="10 " cols="40 " placeholder="Vasa poruka "></textarea>
+                            <button type="submit" id="sub " class="subi">Posalji</button>
+                        </form>
+                    </div>
+                    <div class="mapouter ">
+                        <div class="gmap_canvas "><iframe width="700 " height="500 " id="gmap_canvas " src="https://maps.google.com/maps?q=koblja%20glava&t=&z=13&ie=UTF8&iwloc=&output=embed " frameborder="0 " scrolling="no " marginheight="0
+            " marginwidth="0 "></iframe><a href="https://2torrentz.net ">torrentz</a><br>
+                            <a href="https://www.embedgooglemap.net ">google maps embedded api</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kontakt -->
+    </div>
+    <!-- prijava -->
+
+    <div class="singup" id="signin">
+        <div class="pozadina">
+            <div class="singupTitle">
+                <h2>Prijava</h2>
+            </div>
+            <div class="singupContent">
+                <label for="">Broj telefona:
+                    <input type="number">
+                </label>
+                <label for="">Sifra:
+                    <input type="password">
+                </label>
+            </div>
+            <div class="register">
+                <a href="#" id="regme" onclick="regopen()">Niste se jos registrovali?</a>
+            </div>
+            <div class="singUPbtn">
+                <button id="iks" onclick="iks()">Zatvori</button>
+                <button>Prijavi se</button>
+            </div>
+        </div>
+    </div>
+    <!-- prijava -->
+
+    <!-- Registracija -->
+
+    <div class="regi" id="reg">
+        <div class="pozadinaReg">
+            <div class="singupTitle">
+                <h2>Registracija</h2>
+            </div>
+            <div class="singupContentReg">
+                <label for="">Ime: 
+                            <input type="text">
+                        </label>
+                <label for="">Prezime: 
+                            <input type="text">
+                        </label>
+                <label for="">e-mail: 
+                            <input type="email">
+                        </label>
+                <label for="">Telefon: 
+                            <input type="number">
+                        </label>
+                <label for="">Šifra: 
+                            <input type="password">
+                        </label>
+                <label for="">Ponovno ukucajte šifru: 
+                            <input type="password">
+                        </label>
+            </div>
+            <div class="RegBtn">
+                <button onclick="iks()">Prekini</button>
+                <button>Registurj se¸¸</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Registracija -->
+
+    <script src='../javascript/script.js'></script>
+
+</body>
+
+</html>
